@@ -1,0 +1,37 @@
+NOTAS DEL CURSO
+
+Para entrar a Node-Red
+
+Primero en una terminal iniciar: node-red
+En una ventana de navegador: http://127.0.0.1:1880/
+
+NODE RED DASHBOARDS
+http://localhost:1880/ui/
+
+Ejercicios en clase
+1. Desactivar un Flow
+
+2. Exportar un flow en un archivo de texto con extensión .json y respaldarlo en repositorio
+
+3. Importar un flow en NodeRed
+
+4. Exportar el flow 2 en un repositorio
+
+msg
+   {
+   "_msgid":315cef82f28f272b,"payload":
+   "fecha", "topic":"comentario" 
+   }
+
+LAS HERRAMIENTAS USADAS EN EL MOMENTO SON:
+GitHub Descktop para lo que tengo en mi máquina
+NodeRed para hacer los flows
+NodeRed Dashboards
+GitHub en Navegador para ver lo que esta en la nube
+Explorador de Archivos: donde en Documents/GitHub/FLOW1-SIC estoy guardando los flows creados
+
+
+
+
+
+
