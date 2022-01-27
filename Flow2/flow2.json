@@ -1,0 +1,111 @@
+[
+    {
+        "id": "49286d31bfb74281",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2542600b7401fd36",
+        "type": "inject",
+        "z": "49286d31bfb74281",
+        "name": "Topic de Ejemplo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Topic de ejemplo",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "3d073ca2e3555076"
+            ]
+        ]
+    },
+    {
+        "id": "87c0acfa8a3a2281",
+        "type": "debug",
+        "z": "49286d31bfb74281",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3d073ca2e3555076",
+        "type": "function",
+        "z": "49286d31bfb74281",
+        "name": "",
+        "func": "// Lo que está después de “//” son comentarios\n// Crea un objeto Date a partir del payload enviado por timestamp\nvar date = new Date(msg.payload);\n// Cambia el payload para que sea una fecha con formato\nmsg.payload = date.toString();\n// Regresa el mensaje para que se envíe al sigueinte nodo\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 80,
+        "wires": [
+            [
+                "87c0acfa8a3a2281",
+                "4d9b92fbb6fca534"
+            ]
+        ]
+    },
+    {
+        "id": "4d9b92fbb6fca534",
+        "type": "ui_text",
+        "z": "49286d31bfb74281",
+        "group": "6bdb96d8e71a434d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Fecha",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 560,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "6bdb96d8e71a434d",
+        "type": "ui_group",
+        "name": "Fecha",
+        "tab": "776a26b4d85009db",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "776a26b4d85009db",
+        "type": "ui_tab",
+        "name": "Flow 1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
