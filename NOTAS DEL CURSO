@@ -2,8 +2,8 @@ NOTAS DEL CURSO
 
 Para entrar a Node-Red
 
-Primero en una terminal iniciar: node-red
-En una ventana de navegador: http://127.0.0.1:1880/
+1) Primero en una terminal iniciar: node-red
+2) En una ventana de navegador: http://127.0.0.1:1880/
 
 NODE RED DASHBOARDS
 http://localhost:1880/ui/
