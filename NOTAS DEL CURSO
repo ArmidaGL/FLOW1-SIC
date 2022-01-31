@@ -52,8 +52,13 @@ nslookup broker.hivemq.com
 
 Comando para publicar:
 
-armida@armida-vm:~$ mosquitto_pub -h 35.157.158.119 -p 1883 -i armida_1234 -q 2 -t codigoIoT/SIC/G5/temp -m "{\"id\":\"Armida \","temp\":36}"
+armida@armida-vm:~$ mosquitto_pub -h 35.157.158.119 -p 1883 -i armida_1234 -q 2 -t codigoIoT/SIC/G5/temp -m "{\"id\":\"Armida \",\"temp \":36}"
 
+
+Separar las variables 
+-Nodo funcionn
+
+Graficarlas en Dashboard
 
 
 
