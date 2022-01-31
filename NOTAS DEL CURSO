@@ -31,6 +31,32 @@ GitHub en Navegador para ver lo que esta en la nube
 Explorador de Archivos: donde en Documents/GitHub/FLOW1-SIC estoy guardando los flows creados
 
 
+31 enero 2022
+
+Flow 3
+
+Se crea el flow 3
+
+
+
+
+nslookup broker.hivemq.com
+	Server:		127.0.0.53
+	Address:	127.0.0.53#53
+
+	Non-authoritative answer:
+	Name:	broker.hivemq.com
+	Address: 35.157.158.119
+	Name:	broker.hivemq.com
+	Address: 18.193.126.219
+
+Comando para publicar:
+
+armida@armida-vm:~$ mosquitto_pub -h 35.157.158.119 -p 1883 -i armida_1234 -q 2 -t codigoIoT/SIC/G5/temp -m "{\"id\":\"Armida \","temp\":36}"
+
+
+
+
 
 
 
