@@ -39,7 +39,8 @@ Se crea el flow 3
 
 
 
-
+// Para identificar el ip actual del servidor externo hivemq 
+// Ya que lo cambian regularmente por ser público
 nslookup broker.hivemq.com
 	Server:		127.0.0.53
 	Address:	127.0.0.53#53
@@ -52,7 +53,10 @@ nslookup broker.hivemq.com
 
 Comando para publicar:
 
-armida@armida-vm:~$ mosquitto_pub -h 35.157.158.119 -p 1883 -i armida_1234 -q 2 -t codigoIoT/SIC/G5/temp -m "{\"id\":\"Armida \",\"temp \":36}"
+armida@armida-vm:~$ mosquitto_pub -h 35.157.158.119 -p 1883 -i armida_1234 -q 2 -t codigoIoT/SIC/G5/temp -m "{\"id\":\"Armida\",\"temp\":36}"
+
+Explicación del comando:
+publicar(mosquitto_pub) en host(-h) en el puerto(-p) con identificación(-i) con calidad de servicio(-q) el tema(-t)
 
 
 Separar las variables 
